@@ -24,3 +24,21 @@ and seperate them what stays the same.
 **Definition**: Strategy Pattern defines a family of algorithms,  
 encapsulates each one, and makes them interchangeable.   
 Strategy lets the algorithm vary independently from clients that use it.
+
+#### 2- OBSERVER PATTERN
+
+** Observer pattern is alike newspaper subscription.
+Publisher is the Subject and the subscribers are the Observers. 
+
+**Definition**: The Observer Pattern defines a one-to-many dependency between objects so that when on object changes state, all of its dependents are notified and updated automatically.
+
+- When two objects are loosely coupled, they can interact, but have very little knowledge of each other. 
+	- The Observer Pattern provides an object design where subjects and observers are loosely coupled.
+
+- Strive for loosely coupled designs between objects that interact.
+	- Loosely coupled designs allow us to build flexible OO systems that can handle change because they minimize the interdependency between objects.
+
+- > java.util.Observable class violate OO design principle of **programming to interfaces not implementations**.
+<br/>Also it can't possible to create an instance of the Observable class and compose it with our own objects, our class have to subclass. Because setChanged() method is protected that means it can't be called unless the class subclassed Observable. This design violates another design principle **favor composition over inheritance**.
+
+

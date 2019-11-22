@@ -7,9 +7,9 @@ public class Test {
 
         for (Duck d : allDucks) {
             d.display();
-            d.quack();
+            d.quack(); // RubberDuck should squack not quack
             d.swim();
-            d.fly();
+            d.fly(); // RubberDuck can not fly
             System.out.println("===========================");
         }
 

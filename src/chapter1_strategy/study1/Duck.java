@@ -10,6 +10,9 @@ public abstract class Duck {
         System.out.println(this.getClass().getSimpleName() + " Swimming....");
     }
 
+    /**
+     * Can all ducks fly?
+     */
     public void fly(){
         System.out.println(this.getClass().getSimpleName() + " Flying....");
     }

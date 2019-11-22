@@ -7,7 +7,7 @@ public class Test {
 
         for (Duck d : allDucks) {
             d.display();
-            if (d instanceof IQuackable){
+            if (d instanceof IQuackable){ // Using Duck implementations is difficult because types can be vary...
                 ((IQuackable)d).quack();
             }
             d.swim();

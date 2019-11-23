@@ -42,3 +42,25 @@ Publisher is the Subject and the subscribers are the Observers.
 <br/>Also it can't possible to create an instance of the Observable class and compose it with our own objects, our class have to subclass. Because setChanged() method is protected that means it can't be called unless the class subclassed Observable. This design violates another design principle **favor composition over inheritance**.
 
 
+#### 3- DECORATOR PATTERN
+
+- Classes should be open for extension, but closed for modification. (Open-Closed Principle)
+- Inheritance is one form of extension, but not necessarily the best way to achieve flexibility.
+- Decorators has the same supertype as the objects they decorate
+
+- Composition and delegation can often be used to add new behaviors at runtime.
+
+**Definition**: The Decorator Pattern attaches additional responsibilities to an object dynamically.
+Decorators provide a flexible alternative to subclassing for extending functionality.
+
+Decorators change the behavior of their components by adding new functionality before and/or after method calls to the component.
+
+> Java I/O classes are largely based on Decorator Pattern.
+Java I/O also points out one of the downsides of the Decorator Pattern:
+<br/>designs using this pattern often result in a large number of small classes.
+
+- With Factory and/or Builder Patterns creating decorated objects is much better.
+
+
+
+

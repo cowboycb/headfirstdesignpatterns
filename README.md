@@ -62,5 +62,28 @@ Java I/O also points out one of the downsides of the Decorator Pattern:
 - With Factory and/or Builder Patterns creating decorated objects is much better.
 
 
+#### 4- FACTORY PATTERN WITH TYPES
+
+- Factory isn't actually a Design Pattern; it's more of a programming idiom. But it's commonly used.
+- Factories handle the details of object creation.
+- Factories decouple client code from the concrete classes. 
+- All factories encapsulate object creation
+
+**Simple Factory Pattern Definition**: defines a class which has a method responsible for creating object with details and returning instance.
+Defining a simple factory as a static method is a common technique and is often called **Static Factory**. This also has a disadvantage that this factory class couldn't be subclassed and changed its behaviour.
+
+**Factory Method Pattern Definition**: defines an interface for creating an object, but lets subclasses decide which class to instantiate. Factory Method lets a class defer instantiation to subclasses.
+It encapsulates product knowledge into each creator. Base creator class is written without knowledge of the actual products that will be created, which is decided purely by the choice of the subclass of the creator that is used.
+
+**Abstract Factory Pattern Definition**: provides an interface for creating families of related or dependent objects without specifying their concrete classes.
+Factory methods are a natural way to implement product methods in abstract factories. _If new products added then abstract factory interface needs to change, that is a disadvantage._
+Abstract Factory often use _Factory Methods_ to implement concrete factories.
+
+- Factory Method relies on inheritance: object creation is delegated to subclasses. Abstract Factory relies on object composition: object creation is implemented in methods.  
+
+- By placing all object creation code in one place, avoids duplicate code and provides to perform maintenance easily.
+
+- Dependency Inversion Principle; Depend upon abstractions, do not depend upon concrete classes.
+ Similar to "Program to an interface not an implementation". Except high-level components should not depend on low-level components; rather they should both depend on abstractions. (abstraction means interface or abstract class in Java) 
 
 

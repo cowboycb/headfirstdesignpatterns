@@ -86,4 +86,24 @@ Abstract Factory often use _Factory Methods_ to implement concrete factories.
 - Dependency Inversion Principle; Depend upon abstractions, do not depend upon concrete classes.
  Similar to "Program to an interface not an implementation". Except high-level components should not depend on low-level components; rather they should both depend on abstractions. (abstraction means interface or abstract class in Java) 
 
+#### 5- SINGLETON PATTERN
+
+**Definition**: The Singleton Pattern ensures a class has only one instance, and provides a global point of access to it.
+
+- There is no public constructor. Constructor must be declared private.
+- Singleton object can not be instantiated out of the class, so when another object ask for the instance Singleton class creates the instance and returns it.
+
+For example our Singleton class has an _getInstance()_ method which returns the single object of the class.
+
+**Types of singleton implementation:**
+
+- Lazy created singleton object which is not thread safe. (it is created when asking for an instance)
+- Lazy created but which is thread safe with synchronized whole method.
+- Eagerly created (it is created when the class is loaded in JVM)
+
+But synchronization is expensive, for reducing the use of synchronization in getInstance(), "double-checked locking" can be used. 
+
+> **Synchronize** by adding synchronized keyword to the method/block we force every thread to wait its turn before it can enter the method/block. That is, no two threads may enter the method at the same time.
+
+
 

@@ -29,8 +29,7 @@ public class RemoteLoader {
 
         System.out.println(remoteControl);
 
-        remoteControl.onButtonWasPushed(4);
-        remoteControl.onButtonWasPushed(11);
+        remoteControl.onButtonWasPushed(4); // empty slot
 
         remoteControl.onButtonWasPushed(2);
         remoteControl.offButtonWasPushed(2);
@@ -38,6 +37,8 @@ public class RemoteLoader {
         remoteControl.onButtonWasPushed(3);
         remoteControl.offButtonWasPushed(3);
 
+        remoteControl.undoButtonWasPushed();
+        remoteControl.undoButtonWasPushed();
         remoteControl.undoButtonWasPushed();
 
     }

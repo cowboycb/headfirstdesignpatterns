@@ -105,5 +105,24 @@ But synchronization is expensive, for reducing the use of synchronization in get
 
 > **Synchronize** by adding synchronized keyword to the method/block we force every thread to wait its turn before it can enter the method/block. That is, no two threads may enter the method at the same time.
 
+#### 6- COMMAND PATTERN
+
+**Definition**: The Command Pattern encapsulates a request as an object, thereby letting you parameterize other objects with different requests, queue or log requests, and support undoable operations.
+
+- Command pattern encapsulates commands (method calls) in objects allowing us to issue requests without knowing the requested operation or the requesting object.
+- Provides the options to queue commands, undo/redo actions and other manipulations.
+
+**The classes participating in the pattern are:**
+<br/>`Command` - declares an interface for executing an operation
+<br/>`ConcreteCommand` - extends the Command interface, implementing the Execute method by invoking the corresponding operations on Receiver. It defines a link between the Receiver and the action.
+<br/>`Client` - creates a ConcreteCommand object and sets its receiver;
+<br/>`Invoker` - asks the command to carry out the request;
+<br/>`Receiver` - knows how to perform the operations;
+
+- Decouples the object that invokes the action(Invoker) from the object that performs the action(Receiver). Due to this usage it is also known as Producer - Consumer design pattern.
+
+- The Command Pattern can also support logging all actions and being able to recover after a crash by reinvoking those actions with the addition two methods: _store()_ and _load()_.
+
+- In practice, it is not uncommon for "smart" Command objects to implement the request themselves rather than delegating to a receiver.
 
 

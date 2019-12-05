@@ -6,19 +6,16 @@
   
 #### 1- STRATEGY PATTERN  
   
-- Identify of the aspects of your application that vary   
-and seperate them what stays the same.  
-  - Take the parts that vary and encapsulate them, so that later you can  
-   alter or extend the parts that vary without affecting those that don't.  
-- Program to an interface not an implementation.
-  - Duck classes won't need to know any of the implementation details  
-   for their own behaviors. 
-- Favor composition over inheritance
+🌟 Identify of the aspects of your application that vary and seperate them what stays the same.  
+  - Take the parts that vary and encapsulate them, so that later you can alter or extend the parts that vary without affecting those that don't.  
+
+🌟 Program to an interface not an implementation.
+  - Duck classes won't need to know any of the implementation details for their own behaviors. 
+
+🌟 Favor composition over inheritance
   - Composition means putting classes together (HAS-A)  
-  - Instead of inheriting their behavior, getting their behavior by being composed   
-   with the right behavior object.  
-  - Creating systems using composition gives more flexibility. Not only does it  
-   let you encapsulate a family of algorithms into their own set of classes,   
+  - Instead of inheriting their behavior, getting their behavior by being composed with the right behavior object.
+  - Creating systems using composition gives more flexibility. Not only does it let you encapsulate a family of algorithms into their own set of classes,   
    but it also lets you change behavior at runtime.  
   
 **Definition**: Strategy Pattern defines a family of algorithms,  
@@ -35,7 +32,7 @@ Publisher is the Subject and the subscribers are the Observers.
 - When two objects are loosely coupled, they can interact, but have very little knowledge of each other. 
 	- The Observer Pattern provides an object design where subjects and observers are loosely coupled.
 
-- Strive for loosely coupled designs between objects that interact.
+🌟 Strive for loosely coupled designs between objects that interact.
 	- Loosely coupled designs allow us to build flexible OO systems that can handle change because they minimize the interdependency between objects.
 
 - > java.util.Observable class violate OO design principle of **programming to interfaces not implementations**.
@@ -44,7 +41,7 @@ Publisher is the Subject and the subscribers are the Observers.
 
 #### 3- DECORATOR PATTERN
 
-- Classes should be open for extension, but closed for modification. (Open-Closed Principle)
+🌟 Classes should be open for extension, but closed for modification. (Open-Closed Principle)
 - Inheritance is one form of extension, but not necessarily the best way to achieve flexibility.
 - Decorators has the same supertype as the objects they decorate
 
@@ -83,7 +80,7 @@ Abstract Factory often use _Factory Methods_ to implement concrete factories.
 
 - By placing all object creation code in one place, avoids duplicate code and provides to perform maintenance easily.
 
-- Dependency Inversion Principle; Depend upon abstractions, do not depend upon concrete classes.
+🌟 **`Dependency Inversion Principle`**; Depend upon abstractions, do not depend upon concrete classes.
  Similar to "Program to an interface not an implementation". Except high-level components should not depend on low-level components; rather they should both depend on abstractions. (abstraction means interface or abstract class in Java) 
 
 #### 5- SINGLETON PATTERN
@@ -125,4 +122,27 @@ But synchronization is expensive, for reducing the use of synchronization in get
 
 - In practice, it is not uncommon for "smart" Command objects to implement the request themselves rather than delegating to a receiver.
 
+#### 7- ADAPTER PATTERN
 
+**Adapter Pattern Definition**: The Adapter Pattern converts the interface of a class into another interface the clients expect. 
+<br/>Adapter lets classes work together that couldn't otherwise because of incompatible interfaces.
+
+- Decouples the client from the implemented interface, and we expect the interface to change over time, the adapter encapsulates that change so that the client doesn't have to be modified each time it needs to operate against a different interface.
+
+- There are two types of adapters: `object adapters` and `class adapters`.
+
+- The only difference between object adapters and class adapters is that with class adapter, adapter is subclass of adaptee, while with object adapter it uses composition to pass the requests to adaptee.
+
+**Facade Pattern Definition**: The Facade Pattern provides a unified interface to a set of interfaces in a subsystem. Facade defines a higher-level interface that makes the subsystem easier to use.
+ 
+- Facade Pattern hides all the complexity of one or more classes behind a clean, well-lit facade.
+
+- Facades don't encapsulate the subsystem classes; they merely provide a simplified interface to their functionality.
+- The Facade Pattern also allows you to decople your client implementation from any one subsystem.
+
+<u>The difference between the Adapter Pattern and the Facade Pattern is their intent:</u>
+ 
+- The intent of the Adapter Pattern is to alter an interface so that it matches one a client is expecting. 
+- The intent of the Facade Pattern is to provide a simplified interface to a subsytem.
+
+🌟 Principle of Least Knowledge - talk only to your immediate friends. It means when you are designing a system, for any object, be careful of the number of classes it interacts with and also how it comes to interact with those classes.

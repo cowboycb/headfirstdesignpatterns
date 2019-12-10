@@ -146,3 +146,24 @@ But synchronization is expensive, for reducing the use of synchronization in get
 - The intent of the Facade Pattern is to provide a simplified interface to a subsytem.
 
 🌟 Principle of Least Knowledge - talk only to your immediate friends. It means when you are designing a system, for any object, be careful of the number of classes it interacts with and also how it comes to interact with those classes.
+
+#### 8- TEMPLATE METHOD PATTERN
+
+- The template method defines the steps of an algorithm and allows subclasses to provide the implementation for one or more steps.
+
+**Definition**: The Template Method Pattern defines the skeleton of an algorithm in a method, deferring some steps to subclasses. Template Method lets subclasses redefine certain steps of an algorithm without changing the algorithm's structure.
+
+- Presents an important technique for code reuse.
+
+- To prevent the subclasses from changing the algorithm in the template method, declare the template method as final. 
+
+- **Hook** : A hook is a method that is declared in the abstract class, but only given an empty or default implementation. A subclass is also free to ignore the hook.
+
+🌟 **`The Hollywood Principle`** Don't call us, we'll call you. This principle gives us a way to prevent 'dependency rot'. Dependecy rot happens when you have high-level components depending on low-level components...
+
+- The high-level components give the low-level components a "don't call us, we'll call you" treatment.
+
+--> The Strategy and Template Method Patterns both encapsulate algorithms, one by inheritance and one by composition.
+
+
+

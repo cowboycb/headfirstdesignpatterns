@@ -165,5 +165,25 @@ But synchronization is expensive, for reducing the use of synchronization in get
 
 --> The Strategy and Template Method Patterns both encapsulate algorithms, one by inheritance and one by composition.
 
+#### 9- ITERATOR PATTERN
+
+**Iterator Pattern Definition**: The Iterator Pattern provides a way to access the elements of an aggregate object sequentially without exposing its underlying representation.
+
+- It also places the task of traversal on the iterator object, not on the aggregate, which simplifies the aggregate interface and implementation, and places the responsibility where it should be.
+
+🌟 **`Single Responsibility Principle`** A class should have only one reason to change. 
+
+- Every responsibility of a class is an area of potential change. More than one responsibility means more than one area of change.
+
+**Cohesion** is a term you'll hear used as a measure of how closely a class or a module supports a single purpose or responsibility. We say that a module or class has `high cohesion` 
+when it is designed around a set of related functions, and we say it has `low cohesion` when it is designed around a set of unrelated functions.
+
+**Composite Pattern Definition**: The Composite Pattern allows you to compose objects into tree structures to represent part-whole hierarchies. Composite lets client treat individual objects and compositions of objects uniformly
+
+- Composite Pattern takes the Single Responsibility design principle and trades it for transparency. Whether an element is a composite or leaf node becomes transparent to the client.
+There are many tradeoffs in implementing Composite. Transparency and safety in our needs should be balanced.
+
+
+
 
 

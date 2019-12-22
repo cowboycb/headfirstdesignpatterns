@@ -183,7 +183,21 @@ when it is designed around a set of related functions, and we say it has `low co
 - Composite Pattern takes the Single Responsibility design principle and trades it for transparency. Whether an element is a composite or leaf node becomes transparent to the client.
 There are many tradeoffs in implementing Composite. Transparency and safety in our needs should be balanced.
 
+#### 10- STATE PATTERN
 
+**Definition**: The State Pattern allows an object to alter its behavior when its internal state changes. The object will appear to change its class.
+
+- State Pattern and Strategy pattern have same class diagrams but they differ in their intent.
+
+- With the State Pattern, we have a set of behaviors encapsulated in state objects; at any time the context is delegating to one of those states. The client usually knows very little about the state objects.
+
+- With Strategy, the client usually specifies the strategy object that the context is composed with.
+
+- In general, think of the Strategy Pattern as a flexible alternative to subclassing. You can change the behavior by composing with a different strategy object.
+
+- Think of the State Pattern as an alternative to putting lots of conditionals in your context. You can simply change the state object in context to change its behavior.
+
+- More state classes is a price for flexibility. Otherwise very large, monolithic conditional statements in one class make code hard to maintain and understand. Also this violates Single Responsibility principle.
 
 
 

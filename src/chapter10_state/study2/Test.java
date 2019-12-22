@@ -2,7 +2,7 @@ package chapter10_state.study2;
 
 public class Test {
     public static void main(String[] args) {
-        GumballMachine gumballMachine = new GumballMachine(5);
+        GumballMachine gumballMachine = new GumballMachine(10);
 
         System.out.println(gumballMachine);
 

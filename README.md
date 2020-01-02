@@ -199,5 +199,20 @@ There are many tradeoffs in implementing Composite. Transparency and safety in o
 
 - More state classes is a price for flexibility. Otherwise very large, monolithic conditional statements in one class make code hard to maintain and understand. Also this violates Single Responsibility principle.
 
+#### 11- PROXY PATTERN
+
+**Definition**: The Proxy Pattern provides a surrogate or placeholder for another object to control access to it.
+Use the Proxy Pattern to create a representative object that controls access to another object, which may be remote, expensive to create or in need of securing.
+
+- A remote proxy provides a local representative for an object in a different address space.
+- A virtual proxy controls creating expensive objects on demand.
+- A protection proxy controls access to the original object. Protection proxies are useful when objects should have different access rights.
+- Many other variants of the Proxy Pattern exist including caching proxies, synchronization proxies, firewall proxies, and so-on.
+
+* Java lets us create a proxy class _on the fly_ (at runtime) that implements one or more interfaces and forwards method invocations to a class that you specify. This Java Technology is called **dynamic proxy**. 
+
+- Proxy is structurally similar to Decorator, but the two differ in their purpose.
+- The Decorator Pattern adds behavior to an object, while a Proxy controls access.
+
 
 

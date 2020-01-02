@@ -1,18 +1,25 @@
 package chapter10_state.study2;
 
 public class GumballMachine {
+
     /**
      * ****** STATES ******
      */
     // Out of Gumballs State
-    State soldOutState;
-    State noQuarterState;
-    State hasQuarterState;
-    State soldState;
-    State winnerState;
+    private State soldOutState;
+    private State noQuarterState;
+    private State hasQuarterState;
+    private State soldState;
+    private State winnerState;
 
-    State state = soldOutState;
-    int count = 0;
+    private State state = soldOutState;
+    private int count = 0;
+    private String location;
+
+    public GumballMachine(int count, String location) {
+        this(count);
+        this.location = location;
+    }
 
     public GumballMachine(int numberGumballs) {
         soldOutState = new SoldOutState(this);
@@ -21,6 +28,7 @@ public class GumballMachine {
         soldState = new SoldState(this);
         winnerState = new WinnerState(this);
 
+        this.location = "public";
         this.count = numberGumballs;
         if (numberGumballs > 0) {
             state = noQuarterState;
@@ -62,8 +70,12 @@ public class GumballMachine {
         }
     }
 
-    int getCount() {
+    public int getCount() {
         return count;
+    }
+
+    public String getLocation() {
+        return location;
     }
 
     public void refill(int numGumBalls) {

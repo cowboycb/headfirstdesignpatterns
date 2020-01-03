@@ -214,5 +214,8 @@ Use the Proxy Pattern to create a representative object that controls access to 
 - Proxy is structurally similar to Decorator, but the two differ in their purpose.
 - The Decorator Pattern adds behavior to an object, while a Proxy controls access.
 
+#### COMPOUND PATTERNS
 
+- Patterns are often used together and combined within the same design solution.
+- A compound pattern combines two or more patterns into a solution that solves a recurring or general problem.
 

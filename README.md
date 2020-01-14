@@ -218,4 +218,93 @@ Use the Proxy Pattern to create a representative object that controls access to 
 
 - Patterns are often used together and combined within the same design solution.
 - A compound pattern combines two or more patterns into a solution that solves a recurring or general problem.
+- _The Model View Controller Pattern(MVC)_ is a compound pattern consisting of the Observer, Strategy and Composite patterns.
+
+
+#### CONCLUSION
+
+* A pattern is a solution to a problem in a context.
+> If you find yourself in a **context** with a **problem** that has a goal that is affected by a set of constraints, 
+> then you can apply a design that resolves the goal and constraints and leads to a **solution**.
+
+- Patterns are not described and documented as a simple problem, context and solution: we have much better ways of describing patterns and collecting them together into **patterns catalogs** (The first and most definitive patterns catalog is "Design Patterns: Elements of Reusable Object-Oriented Software")
+- There are also catalogs on domain specific patterns, like EJB patterns.
+> The forces in the pattern definition shape and control the solution.There are two sides of the force (goals and constraints) and that they need to be balanced or resolved to create a pattern solution.
+
+Pattern Catalogs sections;
+- Name, Intent, Motivation, Applicability, Real World Examples, Collaborations, Relations of Other Patterns, Consequences, Structure, Participants, Implementation, Sample Code.
+- **Name** is a vital part of pattern - without a good name, a pattern can't become part of the vocabulary.
+- **Intent** describes what the pattern does in a short statement. (Pattern definition)
+- **Motivation** gives you a concrete scenario that describes the problem and how the solution solves the problem.
+- **Applicability** describes situations in which the pattern can be applied.
+- **Structure** provides a diagram illustrating the relationships among the classes that participate in the pattern.
+- **Participants** are the classes and objects in the design. This section describes their responsibilities and roles in the pattern.
+- **Collaborations** tells us how the participants work together in the pattern.
+- **Consequences** describe the effects that using this pattern may have: good and bad.
+- **Implementation** provides technique you need to use when implementing the pattern, and issues you should watch out for.
+- **Sample Code** provides code fragments that might help with your implementation.
+- **Known Uses** describes examples of the pattern found in real systems.
+- **Related Patterns** describes the relationship between the pattern and others.
+
+## Pattern Categories
+**Creational Patterns**: involve object instantiation and all provide a way to decouple a client from the objects it needs to instantiate. 
+- Singleton,
+- Builder,
+- Abstract Factory, 
+- Factory Method, 
+- Prototype
+
+**Behavioral Patterns**: are concerned with how classes and objects interact and distribute responsibility. 
+- Template Method, 
+- Command, 
+- Observer, 
+- State, 
+- Strategy, 
+- Iterator, 
+- Chain of Responsibility, 
+- Interpreter, 
+- Visitor, 
+- Mediator, 
+- Memento
+
+**Structural Patterns**: let you compose classes or objects into larger structures. 
+- Decorator, 
+- Composite, 
+- Proxy
+- Facade
+- Adapter
+- Flyweight
+- Bridge
+
+
+🌟 Center your thinking on design, not on patterns. Use patterns when there is a natural need for them. If something simpler will work, then use it.
+
+---
+**Anti Pattern** tells how go from a problem to a BAD solution.
+
+An anti-pattern always looks like a good solution, but then turns out to be a bad solution when it is applied.
+
+## Some Design Patterns Resources
+- https://refactoring.guru/design-patterns
+- http://wiki.c2.com/?WelcomeVisitors
+- https://hillside.net/
+- http://www.javacamp.org/designPattern/
+- https://sourcemaking.com/
+- http://www.oodesign.com/
+- https://www.tutorialspoint.com/design_pattern/index.htm
+- http://www.javaworld.com/blog/java-design-patterns
+- https://www.udemy.com/java-design-patterns-tutorial/
+- https://www.oodesign.com/
+
+
+
+
+
+ 
+
+
+
+
+
+
 

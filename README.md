@@ -290,7 +290,6 @@ An anti-pattern always looks like a good solution, but then turns out to be a ba
 - https://hillside.net/
 - http://www.javacamp.org/designPattern/
 - https://sourcemaking.com/
-- http://www.oodesign.com/
 - https://www.tutorialspoint.com/design_pattern/index.htm
 - http://www.javaworld.com/blog/java-design-patterns
 - https://www.udemy.com/java-design-patterns-tutorial/

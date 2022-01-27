@@ -294,6 +294,7 @@ An anti-pattern always looks like a good solution, but then turns out to be a ba
 - http://www.javaworld.com/blog/java-design-patterns
 - https://www.udemy.com/java-design-patterns-tutorial/
 - https://www.oodesign.com/
+- https://java-design-patterns.com/patterns/
 
 
 
